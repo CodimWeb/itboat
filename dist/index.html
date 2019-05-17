@@ -6,1758 +6,276 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
 <link href="./css/style.css" rel="stylesheet"></head>
 
 <body>
-    <div class="page-wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__panel">
-                    <div class="logo-wrapper">
-                        <a href="#" class="logo">
-                            <img src="img/svg/logo1.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="nav">
-                        <ul class="nav__list" id="navbar-spy">
-                            <li class="nav__item d-none d-md-block">
-                                <a href="#smooth-1" class="nav__link smooth" data-target="#smooth-1">Recommended</a>
-                            </li>
-                            <li class="nav__item d-none d-md-block">
-                                <a href="#smooth-2" class="nav__link smooth" data-target="#smooth-2">Information</a>
-                            </li>
-                            <li class="nav__item d-none d-md-block">
-                                <a href="#smooth-4" class="nav__link smooth" data-target="#smooth-4">Map</a>
-                            </li>
-                            <li class="nav__item d-none d-md-block">
-                                <a href="#smooth-3" class="nav__link smooth" data-target="#smooth-3">Getting Here</a>
-                            </li>
-                            <li class="nav__item d-none d-lg-block">
-                                <a href="#smooth-5" class="nav__link smooth" data-target="#smooth-5">Local Attractions</a>
-                            </li>
-                            <li class="nav__item d-none d-lg-block">
-                                <a href="#smooth-6" class="nav__link smooth" data-target="#smooth-6">Local Food</a>
-                            </li>
-                        </ul>
-                        <div class="dropdown nav__dropdown">
-                            <button class="btn nav__dropdown__btn dropdown-toggle" type="button" id="dropdown-menu" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="nav__dropdown__btn__desctop-text">More</span>
-                                <span class="burger-menu">
-                                    <span class="burger-menu__line"></span>
-                                    <span class="burger-menu__line"></span>
-                                    <span class="burger-menu__line"></span>
-                                </span>
-                            </button>
-                            <div class="dropdown-menu nav__dropdown-menu" aria-labelledby="dropdown-menu">
-                                <a class="dropdown-item nav__dropdown-item smooth d-none d-md-block d-lg-none" href="#smooth-5" data-target="#smooth-5">
-                                    <span class="nav__dropdown-item__text">Local Attractions</span>
-                                </a>
-                                <a class="dropdown-item nav__dropdown-item smooth d-none d-md-block d-lg-none" href="#smooth-6" data-target="#smooth-6">
-                                    <span class="nav__dropdown-item__text">Local Food</span>
-                                </a>
-                                <a class="dropdown-item nav__dropdown-item smooth" href="#smooth-7" data-target="#smooth-7">
-                                    <span class="nav__dropdown-item__text">Rules</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="dropdown nav__dropdown nav__dropdown--language">
-                            <button class="btn nav__dropdown__btn nav__dropdown__btn--language dropdown-toggle" type="button" id="dropdown-select" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="nav__dropdown__selected-language">
-                                    <img src="img/flag/flag-1.svg" alt="">
-                                </span>
-                            </button>
-                            <div class="dropdown-menu nav__dropdown-menu nav__dropdown-menu--language" aria-labelledby="dropdown-select">
-                                <a class="dropdown-item nav__dropdown-item active" href="#">
-                                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-1.svg" alt=""></span>
-                                    <span class="nav__dropdown-item__text">English</span>
-                                </a>
-                                <a class="dropdown-item nav__dropdown-item" href="#">
-                                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-2.png" alt=""></span>
-                                    <span class="nav__dropdown-item__text">Russian</span>
-                                </a>
-                                <a class="dropdown-item nav__dropdown-item" href="#">
-                                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-3.png" alt=""></span>
-                                    <span class="nav__dropdown-item__text">Chinese</span>
-                                </a>
-                            </div>
-                        </div>
-                        <button class="btn nav__dropdown__btn dropdown-toggle btn-offcanvas" type="button" id="dropdown-menu" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="nav__dropdown__btn__desctop-text">Menu</span>
-                            <span class="burger-menu">
-                                <span class="burger-menu__line"></span>
-                                <span class="burger-menu__line"></span>
-                                <span class="burger-menu__line"></span>
-                            </span>
-                        </button>
-                    </div>
+   <div class="wrapper">
+       <div class="slider-title">
+           <h2 class="base-title">Специальные предложения</h2>
+           <div class="slider-nav">
+                <button class="slider-prev slider-btn">
+                    <img src="img/arrow-prev.svg" alt="">
+                </button>
+                <button class="slider-next slider-btn">
+                    <img src="img/arrow-next.svg" alt="">
+                </button>
+           </div>
+       </div>
+        <div class="slider slick-slider">
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
                 </div>
-            </div>
-        </header>
-        <div class="wrapper">
-            <div class="content">
-                <div class="container">
-                    <div class="main-baner">
-                        <div class="main-baner__body">
-                            <div class="main-baner__item">
-                                <div class="main-baner__item__address">71-79 Southwark Street, London</div>
-                                <h2 class="discount__title">Mercure London Bridge</h2>
-                                <div class="main-baner__item__description">
-                                    <div class="main-baner__item__greeting">Welcome!</div>
-                                    <p class="card-info__text mb-9">Mercure London Bridge is a flagship Mercure hotel located in the centre of London.</p>
-                                    <p class="card-info__text">This Travlet is a guide to Mercure London Bridge and the surrounding area. We've included directions to find us, a number of hints and tips for local places to eat and drink along with links for things to do and places to see.</p>
-                                </div>
-                                <div class="main-baner__item__footer">
-                                    <div>
-                                        <p class="main-baner__item__phone-title">Call Reception</p>
-                                        <p class="main-baner__item__phone"><i class="icon icon-phone"></i>+44 20 7123 1234</p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-danger main-baner__item__btn"><i class="icon icon-place"></i>See all places around</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-baner__photo" style="background-image: url(img/main-baner-img.jpg);">
-
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="slider-title">
-                        <h2 class="base-title" id="smooth-1">Recommended</h2>
-                        <div class="slider-title__nav">
-                            <button class="slick-prev slick-prev-1 slick-btn"><i class="icon icon-prev"></i></button>
-                            <button class="slick-next slick-next-1 slick-btn"><i class="icon icon-next"></i></button>
-                        </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
                     </div>
-                    <div class="full-right">
-                        <div class="slider slick-slider" data-slider="1">
-                            <div class="slick-item">
-                                <div class="slider-item">
-                                    <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                    </div>
-                                    <div class="slider-item__body">
-                                        <div class="slider-item__title">
-                                            Top Attractions
-                                        </div>
-                                        <div class="slider-item__subtitle">
-                                            London Pass
-                                        </div>
-                                        <div class="slider-item__description">
-                                            See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                            million visitors!
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__footer">
-                                        <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                                class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slick-item">
-                                <div class="slider-item">
-                                    <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                    </div>
-                                    <div class="slider-item__body">
-                                        <div class="slider-item__title">
-                                            Top Attractions Top Attractions Top Attractions
-                                        </div>
-                                        <div class="slider-item__subtitle">
-                                            London Pass
-                                        </div>
-                                        <div class="slider-item__description">
-                                            See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                            million visitors! See London's top attractions and save over &pound;141 on entry prices.
-                                            Enjoyed by over 3 million visitors!
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__footer">
-                                        <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                                class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slick-item">
-                                <div class="slider-item">
-                                    <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                    </div>
-                                    <div class="slider-item__body">
-                                        <div class="slider-item__title">
-                                            Top Attractions Top Attractions Top Attractions
-                                        </div>
-                                        <div class="slider-item__subtitle">
-                                            London Pass
-                                        </div>
-                                        <div class="slider-item__description">
-                                            See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                            million visitors! See London's top attractions and save over &pound;141 on entry prices.
-                                            Enjoyed by over 3 million visitors!
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__footer">
-                                        <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                                class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slick-item">
-                                <div class="slider-item">
-                                    <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                    </div>
-                                    <div class="slider-item__body">
-                                        <div class="slider-item__title">
-                                            Top Attractions Top Attractions Top Attractions
-                                        </div>
-                                        <div class="slider-item__subtitle">
-                                            London Pass
-                                        </div>
-                                        <div class="slider-item__description">
-                                            See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                            million visitors! See London's top attractions and save over &pound;141 on entry prices.
-                                            Enjoyed by over 3 million visitors!
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__footer">
-                                        <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                                class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slick-item">
-                                <div class="slider-item">
-                                    <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                    </div>
-                                    <div class="slider-item__body">
-                                        <div class="slider-item__title">
-                                            Top Attractions Top Attractions Top Attractions
-                                        </div>
-                                        <div class="slider-item__subtitle">
-                                            London Pass
-                                        </div>
-                                        <div class="slider-item__description">
-                                            See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                            million visitors! See London's top attractions and save over &pound;141 on entry prices.
-                                            Enjoyed by over 3 million visitors!
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__footer">
-                                        <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">
-                                            Read More<i class="icon icon-arrow-right btn-icon-arrow"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="navbar-expand-md">
-                        <div class="collapse navbar-collapse collapse collapse-info" id="collapse-info-1">
-                            <h2 class="base-title" id="smooth-2">Information</h2>
-                            <div class="card-info">
-                                <p class="card-info__title"><i class="icon icon-phone"></i>Contact Details</p>
-                                <div class="row">
-                                    <div class="col-12 col-md-4 card-info__item">
-                                        <p class="card-info__text">You can contact us by calling:</p>
-                                        <p class="card-info__text font-semibold text-uppercase">+44 (0) 207 000 0000</p>
-                                    </div>
-                                    <div class="col-12 col-md-4 card-info__item">
-                                        <p class="card-info__text">Fax:</p>
-                                        <p class="card-info__text font-semibold text-uppercase">+44 (0) 207 000 0000</p>
-                                    </div>
-                                    <div class="col-12 col-md-4 card-info__item">
-                                        <p class="card-info__text">Our address is:</p>
-                                        <p class="card-info__text font-semibold text-uppercase">9997 Horne Lane, London W3 6QP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-info">
-                                <p class="card-info__title"><i class="icon icon-coffee"></i>Breakfast</p>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="card-info__text mb-10">Breakfast is served <span class="font-semibold">7am to
-                                                11am</span>.</p>
-                                        <p class="card-info__text">We offer a simple continental breakfast: providing a choice of
-                                            tea/coffee/hot chocolate, orange juice, toast, marmalade, strawberry/raspberry jam,
-                                            selection of cereals and fruit, and choice of yogurts in one of two cosy breakfast rooms.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-info">
-                                <p class="card-info__title"><i class="icon icon-time"></i>Check-in & Check-out</p>
-                                <div class="row">
-                                    <div class="col-12 col-md-4 card-info__item">
-                                        <p class="card-info__text">Check-in time:</p>
-                                        <p class="card-info__text font-semibold text-uppercase">2PM</p>
-                                    </div>
-                                    <div class="col-12 col-md-4 card-info__item">
-                                        <p class="card-info__text">Check-out time:</p>
-                                        <p class="card-info__text font-semibold text-uppercase">2PM</p>
-                                    </div>
-                                    <div class="col-12 col-md-4 card-info__item">
-                                        <p class="card-info__text">Express check-out:</p>
-                                        <p class="card-info__text font-semibold text-uppercase">5 GBP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-info">
-                                <p class="card-info__title"><i class="icon icon-service"></i>Services</p>
-                                <p class="card-info__text">We are able to offer the following on request:</p>
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                        <ul class="card-info__list reset-margin-mobile">
-                                            <li class="card-info__list__item">European Adapters</li>
-                                            <li class="card-info__list__item">Baby Cot</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <ul class="card-info__list reset-margin-mobile">
-                                            <li class="card-info__list__item">Taxis</li>
-                                            <li class="card-info__list__item">Extra Towels at minimal cost</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <ul class="card-info__list reset-margin-mobile">
-                                            <li class="card-info__list__item">Extra pillows</li>
-                                            <li class="card-info__list__item">Iron & ironing board</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-info mb-0">
-                                <p class="card-info__title"><i class="icon icon-wifi"></i>Wi-Fi</p>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="card-info__text mb-10">Breakfast is served <span class="font-semibold">7am to
-                                                11am</span>.</p>
-                                        <p class="card-info__text">We offer a simple continental breakfast: providing a choice of
-                                            tea/coffee/hot chocolate, orange juice, toast, marmalade, strawberry/raspberry jam,
-                                            selection of cereals and fruit, and choice of yogurts in one of two cosy breakfast rooms.
-                                        </p>
-                                        <div class="card-info__warning">
-                                            <i class="icon icon-info-circled"></i>
-                                            <p class="card-info__warning__text">But by using unsecured public Wi-Fi while you travel,
-                                                you could be exposing data that could make your online accounts vulnerable and put you
-                                                at risk for identity theft.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button class="navbar-toggler btn-collapse btn btn-danger btn-danger--ghost btn--middle" type="button" data-toggle="collapse" data-target="#collapse-info-1" aria-controls="collapse-info" aria-expanded="false">
-                                Show more
-                            </button>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time gray">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time gray">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time gray">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time gray">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="slider-item product-item">
+                <div class="product-item__photo">
+                    <img src="img/slide.jpg" alt="">
+                    <div class="product-item__discount">-40%</div>
+                </div>
+                <div class="product-item__description">
+                    <div class="product-item__name">44 м Heesen AT Last</div>
+                    <div class="product-item__info">
+                        <div>2001 / REFIT 2015</div>
+                        <div>4 КАЮТЫ</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__mon-price">15,750,000</div>
+                        <div class="product-item__mon-time">до 30 апр.</div>
+                    </div>
+                    <div class="product-item__price">
+                        <div class="product-item__week-price">&euro;&nbsp;9,750,000</div>
+                        <div class="product-item__week-time">/ НЕДЕЛЯ</div>
+                        <div class="product-item__tooltip" title="some-text">
+                            <img src="img/tooltip.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="map">
-                    <h2 class="base-title text-center" id="smooth-4">Map</h2>
-                    <div class="map-container">
-                        <picture>
-                            <source srcset="img/map-mobile.jpg" media="(max-width: 767px)">
-                            <img src="img/map.jpg" alt="map" class="map__image">
-                        </picture>
-                    </div>
-                </div>
+        <div class="controls">
+            <div class="progress">
+                <input type="text" class="js-range-slider" value="" />
             </div>
+            <a href="#" class="btn-more">
+                <span class="btn-dots-container">
+                    <i class="btn-dots"></i>
+                    <i class="btn-dots"></i>
+                    <i class="btn-dots"></i>
+                </span>
+                <span>Все предложения</span>
+            </a>
         </div>
-        <div class="wrapper">
-            <div class="container">
-                <div class="navbar-expand-md">
-                    <div class="collapse navbar-collapse collapse collapse-info" id="collapse-info-2">
-                        <h2 class="base-title" id="smooth-3">Getting Here</h2>
-                        <div class="card-info">
-                            <p class="card-info__title"><i class="icon icon-taxi"></i>Uber / Private Taxi </p>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-info__text">The simplest method is to use a private taxi straight to our door.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <p class="card-info__title"><i class="icon icon-bus"></i>London Public Transport</p>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-info__text">To use the London public transport network, the easiest way to pay is
-                                        to buy a <a href="#" class="primary-link link-border-primary">Visitor Oyster Card</a> or
-                                        your own 'contactless' UK bank card. You can get to us via Bus or Tube.</p>
-                                    <a href="#" class="card-info__transport">
-                                        <div class="card-info__transport__image" style="background-image: url(img/transport-1.jpg)">
-
-                                        </div>
-                                        <div class="card-info__transport__description">
-                                            <p class="card-info__transport__title font-semibold mb-8">The London Pass</p>
-                                            <p class="card-info__transport__text">The London Oyster Card is a rechargeable
-                                                travelcard that can be used. <span class="primary-link font-semibold">Buy London
-                                                    Pass <i class="icon icon-arrow-right"></i></span></p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <p class="card-info__title"><i class="icon icon-train"></i>Tube</p>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-info__text">There are two main stations in Acton:</p>
-                                    <ul class="card-info__list">
-                                        <li class="card-info__list__item">North Acton Station (Central Line) - Zones 2 & 3 (Last
-                                            train from Central London: 00:15)</li>
-                                        <li class="card-info__list__item">Acton Town Station (Piccadilly & District Lines) – Zone 3
-                                            (Last train: 00:15)</li>
-                                        <li class="card-info__list__item">
-                                            The Underground Tube network is now running all night on Friday and Saturday nights
-                                            until 04:30 on Sunday morning.
-                                        </li>
-                                    </ul>
-                                    <p>Please visit the <a href="#" class="primary-link link-border-primary">TfL Night Tube</a> for
-                                        more information.</p>
-                                    <a href="#" class="card-info__transport">
-                                        <div class="card-info__transport__image" style="background-image: url(img/transport-2.jpg)">
-
-                                        </div>
-                                        <div class="card-info__transport__description">
-                                            <p class="card-info__transport__title font-semibold mb-8">Transport for London</p>
-                                            <p class="card-info__transport__text">Tube, DLR, and London Overground, TfL Rail and
-                                                Tram</p>
-                                            <p class="card-info__transport__text"><span class="primary-link font-semibold">Buy
-                                                    London Pass <i class="icon icon-arrow-right"></i></span></p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <p class="card-info__title"><i class="icon icon-fly"></i>From Gatwick Airport</p>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-info__text mb-8">1. Take Gatwick Express to Victoria Station.</p>
-                                    <p class="card-info__text mb-8">2. Change to Underground – Circle Line to Notting Hill Gate OR
-                                        Victoria Line to Oxford Circus.</p>
-                                    <p class="card-info__text mb-8">3. Change to Central Line to North Acton (steps to exit)</p>
-                                    <p class="card-info__text mb-8">4. Walk or take bus 266 (towards Hammersmith) to hotel – 0.8
-                                        miles; 15-20 minutes walk (see map above)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <p class="card-info__title"><i class="icon icon-car"></i>Driving</p>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-info__text">We are located off the A4020 (Acton High Street) and A40 (Western Avenue) which runs through London and is not part of the congestion charging zone.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <p class="card-info__title"><i class="icon icon-parking"></i>Parking</p>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-info__text">We have our own car park at the rear of the building. This is free of
-                                        charge for guests during their stay. If there are no spaces, the street parking is free from
-                                        5pm – 10am next day, Monday to Friday. Parking is free all day on Saturday and Sunday.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info mb-0">
-                            <p class="card-info__title"><i class="icon icon-fly"></i>From Heathrow Airport (For all terminals)</p>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-info__text">Take TfL Rail (from Heathrow Terminals 2&3 or 4 Rail Station) to
-                                        Acton Main Line Rail Station.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <button class="navbar-toggler btn-collapse btn btn-danger btn-danger--ghost btn--middle" type="button" data-toggle="collapse" data-target="#collapse-info-2" aria-controls="collapse-info" aria-expanded="false">
-                            Show more
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="servises">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 text-center">
-                        <div class="servises__item">
-                            <p class="servises__item__title">Late Checkout</p>
-                            <p class="servises__item__description">We are able to offer the following on request:
-                            </p>
-                            <p class="servises__item__price">&pound;30</p>
-                            <a href="#" class="btn btn-danger">Read More<i
-                                    class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 text-center">
-                        <div class="servises__item">
-                            <p class="servises__item__title">Luggage Storage</p>
-                            <p class="servises__item__description">We are able to offer the following on request:
-                            </p>
-                            <p class="servises__item__price">&pound;30</p>
-                            <a href="#" class="btn btn-danger">Read More<i
-                                    class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="container">
-                <div class="discount-wrapper">
-                    <div class="container">
-                        <div class="discount">
-                            <div class="discount__body">
-                                <h2 class="discount__title">–20% for the next visit</h2>
-                                <p class="card-info__text mb-8">Forget about in-room coffee makers. Even in a 5-star hotel, you
-                                    may need to pay for your morning Joe. Those cute little soaps and shampoos that everyone
-                                    likes to take home are going down the drain, too.</p>
-                                <p class="card-info__text mb-8">If you got a screaming deal on the room, be prepared to pay for
-                                    the extras. Your request for what has historically been standard with a room may, without
-                                    warning, end up as an additional cost on your bill.</p>
-                            </div>
-                            <div class="discount__footer">
-                                <p class="discount__info mb-0"><i class="icon icon-info-circled"></i> Valid until the end of the year.</p>
-                                <a href="#" class="btn btn-danger">Read More<i
-                                        class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="slider-title">
-                    <h2 class="base-title" id="smooth-5">Local Attractions</h2>
-                    <div class="slider-title__nav">
-                        <button class="slick-prev slick-prev-2 slik slick-btn"><i class="icon icon-prev"></i></button>
-                        <button class="slick-next slick-next-2 slick-btn"><i class="icon icon-next"></i></button>
-                    </div>
-                </div>
-                <div class="full-right">
-                    <div class="slider slick-slider" data-slider="2">
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)"></div>
-                                <div class="slider-item__body">
-                                    <div>
-                                        <div class="slider-item__title">
-                                            Top Attractions Top Attractions Top Attractions Top Attractions Top Attractions
-                                        </div>
-                                        <div class="slider-item__rating">
-                                            <div class="slider-item__rating__left">
-                                                <div class="slider-item__rating-panel">
-                                                    <div class="slider-item__stars slider-item__stars--strock">
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                        <div>
-                                                            <i class="icon icon-star"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-small">123</div>
-                                            </div>
-
-                                            <div class="slider-item__rating__right">
-                                                <div class="text-small">&pound;&pound;&pound;</div>
-                                            </div>
-                                        </div>
-                                        <div class="slider-item__subtitle">
-                                            Crossoaks Lane Well End Nr. Boreham Herts WD6 5PH <span class="text-small ">110 meters</span>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__description">
-                                            London Pass - see London's top attractions and save over &pound;141 on entry prices.!
-                                            London Pass - see London's top attractions and save over &pound;141 on entry prices.!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        89 Shacklewell Ln, London, E8 2EB <br> <span class="text-small ">110 meters</span>
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="slider-title">
-                    <h2 class="base-title" id="smooth-6">Local Food</h2>
-                    <div class="slider-title__nav">
-                        <button class="slick-prev slick-prev-3 slick-btn"><i class="icon icon-prev"></i></button>
-                        <button class="slick-next slick-next-3 slick-btn"><i class="icon icon-next"></i></button>
-                    </div>
-                </div>
-                <div class="full-right">
-                    <div class="slider slick-slider" data-slider="3">
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-                                    <div class="slider-item__promo">
-                                            –20% promo
-                                    </div>
-                                    <div class="slider-item__name">
-                                            French and Italian
-                                    </div>
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-                                    <div class="slider-item__name">
-                                            French and Italian
-                                    </div>
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-                                    <div class="slider-item__name">
-                                            French and Italian
-                                    </div>
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-                                    <div class="slider-item__name">
-                                            French and Italian
-                                    </div>
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-                                    <div class="slider-item__name">
-                                            French and Italian
-                                    </div>
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-                                    <div class="slider-item__name">
-                                            French and Italian
-                                    </div>
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-item">
-                            <div class="slider-item">
-                                <div class="slider-item__photo" style="background-image:url(img/slider-img.jpg)">
-                                    <div class="slider-item__name">
-                                            French and Italian
-                                    </div>
-                                </div>
-                                <div class="slider-item__body">
-                                    <div class="slider-item__title">
-                                        Top Attractions
-                                    </div>
-                                    <div class="slider-item__rating">
-                                        <div class="slider-item__rating__left">
-                                            <div class="slider-item__rating-panel">
-                                                <div class="slider-item__stars slider-item__stars--strock">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-item__stars slider-item__stars--fill" style="width: 70%;">
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                    <div>
-                                                        <i class="icon icon-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-small">123</div>
-                                        </div>
-
-                                        <div class="slider-item__rating__right">
-                                            <div class="text-small">&pound;&pound;&pound;</div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__subtitle">
-                                        London Pass
-                                    </div>
-                                    <div class="slider-item__description">
-                                        See London's top attractions and save over &pound;141 on entry prices. Enjoyed by over 3
-                                        million visitors!
-                                    </div>
-                                </div>
-                                <div class="slider-item__footer">
-                                    <a href="#" class="btn btn-danger btn-danger--ghost btn-block btn--middle">Read More<i
-                                            class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="servises">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="servises__item">
-                            <p class="servises__item__title">Luggage Storage</p>
-                            <p class="servises__item__description mb-16">Store your luggage securely after you checkout until 11pm.
-                            </p>
-                            <p class="servises__item__price">&pound;48</p>
-                            <a href="#" class="btn btn-danger">Read More<i class="icon icon-arrow-right btn-icon-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="faq">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <h2 class="base-title text-uppercase text-center" id="smooth-7">faq</h2>
-                            <div class="accordion custom-accordion" id="accordionExample">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Can I smoke or vape in the property?
-                                                <div class="icons">
-                                                    <svg class="icon-plus" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 18H10L10 8L0 8V10L8 10L8 18Z"/>
-                                                        <path d="M10 1.74846e-07L8 0L8 10L18 10V8L10 8V1.74846e-07Z" />
-                                                    </svg>
-                                                    <svg class="icon-minus" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 1.90735e-06V2L18 2V0H10L0 1.90735e-06Z"/>
-                                                    </svg>
-                                                </div> 
-                                            </button>
-                                        </h5>
-                                    </div>
-                                
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Please contact us so we can check availability, if the property isn't booked for after your stay finishes then we'll be glad to extend your stay at the current day-rate.  
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                What if I get locked out?
-                                                <div class="icons">
-                                                    <svg class="icon-plus" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 18H10L10 8L0 8V10L8 10L8 18Z"/>
-                                                        <path d="M10 1.74846e-07L8 0L8 10L18 10V8L10 8V1.74846e-07Z" />
-                                                    </svg>
-                                                    <svg class="icon-minus" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 1.90735e-06V2L18 2V0H10L0 1.90735e-06Z"/>
-                                                    </svg>
-                                                </div> 
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Please contact us so we can check availability, if the property isn't booked for after your stay finishes then we'll be glad to extend your stay at the current day-rate.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Do you have airconditioning?
-                                                <div class="icons">
-                                                    <svg class="icon-plus" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 18H10L10 8L0 8V10L8 10L8 18Z"/>
-                                                        <path d="M10 1.74846e-07L8 0L8 10L18 10V8L10 8V1.74846e-07Z" />
-                                                    </svg>
-                                                    <svg class="icon-minus" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 1.90735e-06V2L18 2V0H10L0 1.90735e-06Z"/>
-                                                    </svg>
-                                                </div> 
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="heading-4">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                                                Can I rebook this property?
-                                                <div class="icons">
-                                                    <svg class="icon-plus" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 18H10L10 8L0 8V10L8 10L8 18Z"/>
-                                                        <path d="M10 1.74846e-07L8 0L8 10L18 10V8L10 8V1.74846e-07Z" />
-                                                    </svg>
-                                                    <svg class="icon-minus" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 1.90735e-06V2L18 2V0H10L0 1.90735e-06Z"/>
-                                                    </svg>
-                                                </div> 
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapse-4" class="collapse" aria-labelledby="collapse-4" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="heading-5">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-                                                Can I rebook this property?
-                                                <div class="icons">
-                                                    <svg class="icon-plus" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 18H10L10 8L0 8V10L8 10L8 18Z"/>
-                                                        <path d="M10 1.74846e-07L8 0L8 10L18 10V8L10 8V1.74846e-07Z" />
-                                                    </svg>
-                                                    <svg class="icon-minus" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 1.90735e-06V2L18 2V0H10L0 1.90735e-06Z"/>
-                                                    </svg>
-                                                </div> 
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapse-5" class="collapse" aria-labelledby="collapse-5" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-lvl-1">
-                    <ul class="footer__nav">
-                        <li class="footer__nav__item"><a class="footer__nav__link" href="#">Explore the Map</a></li> 
-                        <li class="footer__nav__item"><a class="footer__nav__link"href="#">Terms of Service</a></li>    
-                        <li class="footer__nav__item"><a class="footer__nav__link"href="#">Privacy</a></li>    
-                    </ul>
-                    <ul class="footer__social">
-                        <li class="footer__social__item"><a class="footer__social__link" href="#"><i class="icon icon-twiter"></i></a></li> 
-                        <li class="footer__social__item"><a class="footer__social__link" href="#"><i class="icon icon-twiter"></i></a></li>    
-                        <li class="footer__social__item"><a class="footer__social__link" href="#"><i class="icon icon-twiter"></i></a></li>    
-                    </ul>
-                </div>
-                <div class="footer-lvl-2">
-                    <div class="footer__copyright">
-                            &copy; 2018-2019 Travlet Ltd. All rights reserved
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <a href="#" class="to-top">
-        <i class="icon icon-arrow-top"></i>
-    </a>
-    <div class="offcanvas-menu">
-        <div class="offcanvas-menu__inner">
-            <div class="offcanvas-menu__list">
-                <div class="offcanvas-menu__list__header">
-                    Menu
-                    <a href="#" class="offcanvas-menu__list__close">
-                        <i class="icon icon-close"></i>
-                    </a>
-                </div>
-                <a class="dropdown-item nav__dropdown-item btn-show-language" href="#">
-                    <span class="nav__dropdown-item__text">Language:</span>
-                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-1.svg" alt=""></span>
-                    <i class="icon icon-next"></i>
-                </a>
-                <a class="dropdown-item nav__dropdown-item smooth" data-target="#smooth-1" href="#smooth-1">
-                    <span class="nav__dropdown-item__text">Recommended</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item smooth" data-target="#smooth-2" href="#smooth-2">
-                    <span class="nav__dropdown-item__text">Information</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item smooth" data-target="#smooth-4" href="#smooth-4">
-                    <span class="nav__dropdown-item__text">Map</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item smooth" data-target="#smooth-3" href="#smooth-3">
-                    <span class="nav__dropdown-item__text">Getting Here</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item smooth" data-target="#smooth-5" href="#smooth-5">
-                    <span class="nav__dropdown-item__text">Local Attractions</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item smooth" data-target="#smooth-6" href="#smooth-6">
-                    <span class="nav__dropdown-item__text">Local Food</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item smooth" href="#smooth-7" data-target="#smooth-7">
-                    <span class="nav__dropdown-item__text">Rulers</span>
-                </a>
-            </div>
-            <div class="offcanvas-menu__language">
-                <div class="offcanvas-menu__language__header">
-                    Language
-                    <i class="icon icon-prev"></i>
-                </div>
-                <a class="dropdown-item nav__dropdown-item active" href="#">
-                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-1.svg" alt=""></span>
-                    <span class="nav__dropdown-item__text">English</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item" href="#">
-                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-2.png" alt=""></span>
-                    <span class="nav__dropdown-item__text">Russian</span>
-                </a>
-                <a class="dropdown-item nav__dropdown-item" href="#">
-                    <span class="nav__dropdown-item__flag"><img src="img/flag/flag-3.png" alt=""></span>
-                    <span class="nav__dropdown-item__text">Chinese</span>
-                </a>
-            </div>
-        </div>
-    </div>
+   </div>
 <script type="text/javascript" src="js/app.js"></script></body>
 </html>

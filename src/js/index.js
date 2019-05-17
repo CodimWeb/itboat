@@ -61,7 +61,6 @@ $(document).ready(function(){
             stepToSlide = 4;
             slideIsActive = stepToSlide;
             var currentSlide = slider.slick('slickCurrentSlide');
-            console.log(currentSlide);
             var range2 = range.data("ionRangeSlider");
             range2.update({
                 max: sliderLength - (stepToSlide - 1)
@@ -78,7 +77,6 @@ $(document).ready(function(){
                 max: sliderLength - (stepToSlide - 1)
             });
             range.data("ionRangeSlider").update({from: currentSlide + 1});
-            console.log(currentSlide);
         }
     
     });
