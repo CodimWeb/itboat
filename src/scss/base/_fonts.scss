@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,500,700');
+
+body {
+    font-family: $rb;
+}
+
+.base-title {
+    font-size: 30px;
+    line-height: 37px;
+    color: #303030;
+    margin: 0;
+    font-family: $mon;
+
+    @media(max-width: 575px) {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    @media(max-width: 479px) {
+        font-size: 20px;
+    }
+
+    @media(max-width: 399px) {
+        font-size: 18px;
+    }
+}

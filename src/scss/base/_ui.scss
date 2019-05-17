@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    overflow-x: hidden;
+}

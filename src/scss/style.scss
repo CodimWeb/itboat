@@ -1,0 +1,25 @@
+//bs 4
+// @import "~bootstrap/scss/bootstrap";
+
+//plugins
+@import 'plugin/slick';
+@import 'plugin/ion.rangeSlider';
+
+//abstract
+@import 'abstract/variables';
+
+//base
+@import 'base/fonts';
+@import 'base/ui';
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+
+//components
+@import 'components/slider';
+@import 'components/product-item';
+@import 'components/controls';
+
+//helpers
+@import 'abstract/helpers';

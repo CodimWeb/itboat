@@ -1,0 +1,97 @@
+.controls {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+
+    @media(max-width: 767px) {
+        justify-content: center;
+    }
+}
+
+.progress {
+    margin-right: 27px;
+    flex: 1;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
+
+.irs--flat {
+    height: 54px;
+}
+
+.irs--flat .irs-line {
+    height: 4px;
+    border-radius: 4px;
+}
+
+.irs--flat .irs-bar {
+    height: 4px;
+    background: $blue;
+    border-radius: 4px;
+}
+
+.irs--flat .irs-handle {
+    background: $white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $blue;
+    top: 19px;
+    cursor: pointer;
+
+    i {
+        display: none !important;
+    }
+}
+
+.irs--flat .irs-max, 
+.irs--flat .irs-min,
+.irs--flat .irs-single {
+    display: none;
+}
+
+.btn-more {
+    display: flex;
+    padding: 14px 80px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $blue;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d3dcf0;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+        color: $gold;
+        border-color: $gold;
+
+        .btn-dots {
+            background: $gold;
+        }
+    }
+
+    @media(max-width: 991px) {
+        padding: 14px 60px;
+    }
+}
+
+.btn-dots-container {
+    display: flex;
+    margin-right: 10px;
+}
+
+.btn-dots {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: $blue;
+    border-radius: 50%;
+    margin: 0 1.5px;
+    transition: 0.25s ease-in-out;
+}
